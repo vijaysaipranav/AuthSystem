@@ -1,0 +1,60 @@
+
+body {
+  margin: 0%;
+  padding-top: 100px;
+  background-color: #dc3545;
+}
+h1{
+  text-align: center;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body li {
+  list-style-type: none;
+}
+.container{
+  margin:0 auto;
+  padding:15px;
+  max-width: 400px;
+  border-radius: 20px;
+  background-color:white;
+}
+input[type=submit]{
+  margin:10px 0 0 0 ;
+  padding:5px;
+  width:auto;
+  height: 15%;
+  width:100%
+}
+.rem-me{
+  margin-top:5px;
+} 
+.center-allign{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.line{
+  background-color:#aaa7a7;
+  height:1.5px;
+  width:175px;
+  margin-top: 11px;
+  border-radius: 2px;
+}
+#orContainer{
+  display:flex;
+  margin-top: 5px;
+  
+}
+#googleSignIn{
+  background-color: #4285f4;
+  text-align: center;
+  padding:1%;
+  border-radius: 5px;
+}
+#googleSignIn a{
+  color:white;
+  
+}

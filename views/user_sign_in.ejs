@@ -1,0 +1,45 @@
+<script src="/js/showPassword.js"></script>
+
+
+
+
+<form action="/users/create-session" method="post" class="container">
+   <h1>Sign In</h1>
+   <div class="form-group">
+        <label for="email" class="form-label"> Email Address</label> 
+        <input type="email" class="form-control"name="email" placeholder="Enter your email" required>
+    </div>
+    <div class="form-group">
+        <label for="password" class="form-label"> Password</label> 
+        <input type="password" class="form-control"id="myInput" name="password" placeholder="Enter your password"
+        required>
+    </div>
+    <div class="from-group">
+        <input type ="checkbox" class="form-label"name="show-password" onclick="showPass()" >
+        <label for="checkbox">Show Password</label>
+    </div>
+    <div class="from-group rem-me">
+        <input type ="checkbox" class="form-label"name="create_session" >
+        <label for="checkbox">Remember me</label>
+    </div>
+    <div class="from-group rem-me">
+        <a href='/reset-password'>Forgot password? </a>
+    </div>
+    <div class="d-flex flex-row-reverse bd-highlight">
+        <input type="submit"  class="btn btn-danger"value="SignIn">
+    </div>
+    <div id="orContainer">
+        <div class="line">
+
+        </div>
+        <div><p>OR</p></div>
+        <div class="line">
+
+        </div>
+    </div>
+    <p id="googleSignIn">
+        <a href="/users/auth/google">Sign-in with Google</a>
+    </p>
+
+</form>
+

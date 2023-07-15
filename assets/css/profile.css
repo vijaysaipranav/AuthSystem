@@ -1,0 +1,16 @@
+body {
+  background-color: #dc2929;
+  text-align: center;
+}
+ul{
+  padding-left: 0px;
+  }
+body a {
+  text-decoration: none;
+}
+
+body li {
+  list-style-type: none;
+}
+
+
