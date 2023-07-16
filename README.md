@@ -5,6 +5,7 @@ This is a basic authentication system for sign-in and sign-up it also contains g
 #Folder Structure:-
 
 ```
+AuthSystem
 ├── .env
 ├── assets
 │   ├── css
