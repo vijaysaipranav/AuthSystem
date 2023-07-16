@@ -55,17 +55,15 @@ AuthSystem
     └── _header.ejs
 ```
 # Features of this App:-
-◦ Sign up with email
-◦ Sign in (you can redirect to a blank home page with a sign out and reset password button after              sign in)
-◦ Sign out 
-◦ Reset password after sign in
-◦ The password stored in the db should be encrypted
-◦ Google login/signup (Social authentication)
-◦ [Bonus Feature] Forgot password (you can either generate a random password and send on email, or             send a reset password link which expires in some time [preferred])
-◦ Display notifications for 
-    ▪ unmatching passwords during sign up
-    ▪ incorrect password during sign in
 
+1. Sign up with email
+2. Sign in (you can redirect to a blank home page with a sign out and reset password button after sign in)
+3. Sign out 
+4. Reset password after sign in
+5. The password stored in the db should be encrypted
+6. Google login/signup (Social authentication)
+7. Forgot password (you can either generate a random password and send on email, or send a reset password link which expires in some time [preferred])
+8. Display notifications.
 # Getting Started:-
 # Prerequisites:-
 ```
