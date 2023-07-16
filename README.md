@@ -1,5 +1,5 @@
 # AuthSystem
-This is a basic authentication system for sign-in and sign-up it also contains google authentication. and this file is a Readme file for this Web Application.It's a Web App built with Node.js ,EJS,MongoDB,,ExpressJs. 
+This is a basic authentication system for sign-in and sign-up it also contains google authentication. and this file is a Readme file for this Web Application.It's a Web App built with Node.js ,EJS,MongoDB,ExpressJs. 
 
 # Contributed By:- Pranav
 #Folder Structure:-
