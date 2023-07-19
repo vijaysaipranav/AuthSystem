@@ -1,3 +1,4 @@
+// requiring all the necessary dependencies
 const User = require ('../models/user');
 const crypto = require('crypto');
 const bcrypt = require('bcryptjs');
@@ -90,6 +91,7 @@ module.exports.createSession = async function(req, res){
     
 }
 
+// this function destroys the session
 module.exports.destroySession = function(req, res,next){
     req.logout(function(err){
         if (err){return next(err);}
@@ -99,6 +101,7 @@ module.exports.destroySession = function(req, res,next){
     return res.redirect('back');
 }
 
+// this function verifies the email by comparing the unique email token 
 module.exports.verifyEmail = async(req,res)=>{
     try{
         const emailToken = req.params.emailToken;

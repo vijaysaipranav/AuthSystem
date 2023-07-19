@@ -1,3 +1,4 @@
+// requireing all the necessary dependencies
 const passport = require('passport');
 const GoogleStratergy=require('passport-google-oauth').OAuth2Strategy;
 const crypto = require('crypto');

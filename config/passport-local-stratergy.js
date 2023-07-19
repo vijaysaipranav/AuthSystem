@@ -1,3 +1,4 @@
+// requireing all the necessary dependencies
 const passport =require('passport');
 const bcrypt = require('bcryptjs');
 const localStrategy = require('passport-local').Strategy;

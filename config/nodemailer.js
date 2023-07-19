@@ -1,7 +1,10 @@
+// setting configurations for sending mainls for nodemailer
+
 const nodemailer = require('nodemailer');
 const ejs = require('ejs')
 const path =  require('path');
 
+// creating a transporter for nodemailer
 let transporter = nodemailer.createTransport({
     service:'gmail',
     host:'smtp.gmail.com',
@@ -14,6 +17,7 @@ let transporter = nodemailer.createTransport({
 
 });
 
+// setting rendering template while sending emails 
 let renderTemplate = (data,relativePath)=>{
     let mailHTML;
     ejs.renderFile(

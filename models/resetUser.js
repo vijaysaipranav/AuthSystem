@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+// schema for resetting password 
 const resetUserSchema = new mongoose.Schema({
     refEmail:{
         type: String,

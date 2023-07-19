@@ -1,9 +1,11 @@
+// requireing all the necessary dependencies
 const crypto = require('crypto');
 const User = require ('../models/user');
 const resetUser = require('../models/resetUser');
 const bcrypt = require('bcryptjs');
 const resetPassword = require('../mailers/reset_password');
 
+// this function creates a access token and gives the data to the transporter function.
 module.exports.sendEmailTOResetPass = async (req,res)=>{
 
     const resetuserexists = await resetUser.exists({refEmail:req.body.email});
@@ -45,11 +47,12 @@ module.exports.sendEmailTOResetPass = async (req,res)=>{
    
 }
 
-
+//  this functions gets registered email from the client side.
 module.exports.getRegisteredEmail = async(req,res)=>{
     
     return res.render('user_email_for_identification')
 }
+//  this functions gets new password from the client side.
 module.exports.getNewuserPassword = async(req,res)=>{
     const accessToken= req.params.accessToken;
     const tokenExists = await resetUser.exists({accessToken:accessToken});
@@ -63,6 +66,7 @@ module.exports.getNewuserPassword = async(req,res)=>{
     }
     
 }
+//  this function updates the password
 module.exports.updatePassword = async(req,res)=>{
     if (req.body.password != req.body.confirm_password){
         return res.redirect('/users/sign-in');

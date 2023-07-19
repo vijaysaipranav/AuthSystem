@@ -1,5 +1,6 @@
 const nodemailer= require('../config/nodemailer');
 
+// this function helps in sending mail to clients or users 
 exports.resetPasswordEmail= async (resetUser,user)=>{
     try{
         let htmlString = nodemailer.renderTemplate({resetUser:resetUser},'/reset_password_template.ejs');

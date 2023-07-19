@@ -1,6 +1,7 @@
 const nodemailer= require('../config/nodemailer');
 
 // this is another way of exporting method
+// this function helps in sending mail to clients or users for email verification
 exports.sendingEmailToVerifyAccount = async (user)=>{
     try{
         let htmlString=nodemailer.renderTemplate({user:user},'/verify_email.ejs')
