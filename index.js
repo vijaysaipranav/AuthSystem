@@ -11,6 +11,7 @@ const MongoStore = require('connect-mongo');
 const flash = require('connect-flash');
 const coustomMWare = require('./config/middleware')
 const passportGoogle = require('./config/passport-google-oauth2-stratergy')
+require('dotenv').config();
 
 
 
@@ -42,7 +43,7 @@ app.use(session({
     },
     store : MongoStore.create(
         {
-        mongoUrl:'mongodb://127.0.0.1:27017/login_system_db',
+        mongoUrl:process.env.MONGODBURL,
         autoRemove:'disabled',
         },
         function(err){
