@@ -17,7 +17,7 @@ module.exports.profile = async(req,res)=>{
 
 // render the sign up page
 module.exports.signUp = function(req, res){
-    console.log(process.env.BASE_URL)
+    
     if (req.isAuthenticated()) {
         return res.redirect('/users/profile');
     }
