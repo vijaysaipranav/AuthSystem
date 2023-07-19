@@ -4,7 +4,7 @@
     </h3>
 
     <p>
-        Hi <%= user.name %> To activate your account, please <a href="http://localhost:8000/users/verify-email/<%=user.emailToken%>"> Click Here </a>
+        Hi <%= user.name %> To activate your account, please <a href="http://localhost:<%=process.env.PORT%>/users/verify-email/<%=user.emailToken%>"> Click Here </a>
     </p>
     
 

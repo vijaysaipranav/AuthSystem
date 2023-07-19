@@ -17,6 +17,7 @@ module.exports.profile = async(req,res)=>{
 
 // render the sign up page
 module.exports.signUp = function(req, res){
+    console.log(process.env.DATABASE_URL)
     if (req.isAuthenticated()) {
         return res.redirect('/users/profile');
     }
@@ -38,6 +39,7 @@ module.exports.signIn = function(req, res){
 
 // get the sign up data
 module.exports.create = async(req, res)=>{
+
     if (req.body.password != req.body.confirm_password){
         return res.redirect('back');
     }
