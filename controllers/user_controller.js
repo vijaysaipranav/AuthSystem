@@ -67,7 +67,8 @@ module.exports.create = async(req, res)=>{
                
 
         }else{
-            return res.redirect('back');
+            await req.flash('error', 'Your email already exists.');
+            return res.redirect('/users/sign-in');
         }
     
     
